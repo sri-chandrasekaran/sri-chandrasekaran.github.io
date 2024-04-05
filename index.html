@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri Chandrasekaran</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sri Chandrasekaran</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sri Chandrasekaran</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <!-- <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpg" alt="John Doe profile picture" />
+      </div> -->
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sri Chandrasekaran</h1>
+        <p class="section__text__p2">Applied Math & Data Science @ UC Berkeley</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/sri_chandrasekaran_resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='mailto:sri.chandrasekaran@berkeley.edu'">
+            Contact Me
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/sri-chandrasekaran-06327023b/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/sri-chandrasekaran'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+                My interests include education equity, machine learning, and startups.
+                I hope to use technology to make a positive impact on the world. In my free time I enjoy learning new things and playing tennis.
+                Let’s connect and collaborate on meaningful opportunities!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Undergraduate Researcher</h2>
+            <h3 class="experience-smaller-sub-title">Berkeley NetSys</h3>
+            <h4>May 2023 - Present</h4>
+            <div class="article-container">
+              <article>
+                <p> Contribute to the design and execution of experiments evaluating congestion control algorithms, refining models to accurately forecast network congestion patterns and proactively mitigate disruptions</p>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Undergraduate Researcher</h2>
+            <h3 class="experience-smaller-sub-title">UCSF: Larson Advanced Imaging</h3>
+            <h4>Jan 2024 - Present</h4>
+            <div class="article-container">
+              <article>
+                <p>Collaborate with interdisciplinary team members to utilize Python in developing and analyzing synthetic
+                    hyperpolarized 13C data for training machine learning models, focusing on brain and/or heart imaging</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Engineer Intern</h2>
+            <h3 class="experience-smaller-sub-title">Neuroleap Corp</h3>
+            <h4>May 2023 - Aug 2023</h4>
+            <div class="article-container">
+              <article>
+                <p>Collaborated with the frontend development team to integrate advanced custom PDF generation functionality through the use of Axios; this enhancement is anticipated to accelerate the report creation process and ensures users receive real-time comprehensive insights</p>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">CEO & Co-Founder</h2>
+            <h3 class="experience-smaller-sub-title">STEMz Learning</h3>
+            <h4>July 2020 - Present</h4>
+            <div class="article-container">
+              <article>
+                <p>Developing and teaching a diverse STEM curriculum spanning 12+ subject areas, including Circuits, Basics of Coding, and more, contributing to over 700 students’ growth and understanding</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/pd.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Diagnosis of Parkinson's Disease Using SVM</h2>
+            <div class="btn-container">
+                <p>Developed Support Vector Machine (SVM) classifier models in <strong>Python</strong> by leveraging voice parameter data obtained through diverse research techniques. My work culminated in the development of diagnostic software designed to facilitate early disease diagnosis.</p>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/byow.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Build Your Own World</h2>
+            <div class="btn-container">
+              <p>Implemented a 2D tile-based world exploration engine in <strong>Java</strong> that randomly generates a graphical tile-based world using a tile renderer, allowing users to move around and interact with world objects. Implemented a GUI to display information on where users are located in the world, other key characteristics; provided user interface to save, quit and reload their worlds</p>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Lightbulb.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">STEMz Learning</h2>
+            <div class="btn-container">
+                <p>Implemented web-application using <strong>ReactJS</strong> for users and participants of STEMz Learning to access classes, curriculum, and get involved with our organization. Currently working on implementing new features, stay tuned!</p>
+            </div>
+            <div class="btn-container project-btn-container">
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://stemzlearning.org'">
+                Visit
+                </button>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/ants.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title"> Ants vs. Some Bees</h2>
+              <div class="btn-container">
+                <p>Implemented tower defense game <strong>Python</strong> using functional and object-oriented programming; populated colony with bravest ants with optimal food cost & health value to protect ant queen from the evil bees that invade its territory.</p>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/cats.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Cats</h2>
+              <div class="btn-container">
+                <p>Implemented a program <strong>Python</strong> that measure typing speed, autocorrect feature, and corrects spelling mistakes; implemented multiplayer functionality. The project included text samples to be typed and a web server for a graphical user interface.</p>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/hog.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Hog | Python</h2>
+              <div class="btn-container">
+                  <p>Implemented a program <strong>Python</strong> dedicated to simulating and finding strategies to win a dice game. There were many rules that had to be followed, but learned how to use control statements and higher order functions.<p>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
