@@ -271,12 +271,15 @@ section {
     flex-direction: column;
   }
   
+  
   .about-containers,
   .about-details-container {
     display: flex;
   }
   
   .about-pic {
+    /* max-width: 100%; */
+    /* height: auto; */
     border-radius: 2rem;
   }
   
