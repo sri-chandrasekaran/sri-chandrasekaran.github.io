@@ -102,10 +102,13 @@
       text-align: justify;
     }
   }
+<<<<<<< HEAD
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .about-pic {
       max-width: 100%;
       height: auto;
     }
   }
+=======
+>>>>>>> parent of 770bd31 (changed media query for ipad)
   
