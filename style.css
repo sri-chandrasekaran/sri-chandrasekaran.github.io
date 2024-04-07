@@ -271,15 +271,17 @@ section {
     margin-top: 2rem;
   }
   
-  #about h1.title {
-    text-align: center;
-  }
 
   .about-details-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-right: 170px;
+    /* align-items: center; */
+    /* text-align: center; */
+  }
+
+  .about-pic {
+    border-radius: 2rem;
   }
   
   .about-containers,
